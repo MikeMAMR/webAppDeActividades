@@ -35,7 +35,7 @@ const CompleteModalActivity: React.FC<CompleteModalActivityProps> = (props) => {
                     <IonCol className='ion-text-center ion-no-padding'>
                         <IonText color='medium'>
                             <p>
-                                Are you sure you want to complete this activity?
+                                Quiere completar la actividad?
                             </p>
                         </IonText>
                     </IonCol>

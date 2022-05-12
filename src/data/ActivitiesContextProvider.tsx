@@ -4,33 +4,7 @@ import ActivitiesCotext, {ActivitiesContextModel, Activity, ActivityType} from "
 const ActivitiesContextProvider: React.FC= (props) => {
     
     const [activities, setActivities] = useState<Activity[]>([
-        {
-            id: Math.random().toString(),
-            title: 'My daily sleep',
-            description: 'Sleep through the night after a day of quarantine',
-            hour: '23:00',
-            activityType: 'rest',
-            imageUrl: '/assets/images/cat.jpg',
-            isCompleted: false
-        },
-        {
-            id: Math.random().toString(),
-            title: 'Hard work',
-            description: 'Work in the projects I have at Tribalyte',
-            hour: '9:00',
-            activityType: 'work',
-            imageUrl: '/assets/images/cat.jpg',
-            isCompleted: false
-        },
-        {
-            id: Math.random().toString(),
-            title: 'Play ping pong',
-            description: 'Play a ping pong match on the hall table!',
-            hour: '19:00',
-            activityType: 'hobby',
-            imageUrl: '/assets/images/cat.jpg',
-            isCompleted: false
-        }
+        
     ]);
     const addActivity = (title: string, description: string, activityType: ActivityType) => {
         let imageUrl = '';
